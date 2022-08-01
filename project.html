@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="project.css" media="screen">
+
+    <title>Formulario de Cadastro</title>
+</head>
+
+<body>
+
+    <div>
+
+        <h1 id="titulo">FORMULÁRIO</h1>
+        <p id="subtitulo">Preencha as informações</p>
+        <br>
+
+        <form
+      action="https://formsubmit.co/your@email.com"
+      method="POST"
+      class="form">
+
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+
+            <div class="campo">
+                <label><strong>Qual lugar mais te interessa ?</strong></label><br>
+                <label>
+                    <input type="radio" name="lugares" value="Taubaté - São Paulo ">Taubaté - São
+                    Paulo
+                </label>
+                <label>
+                    <input type="radio" name="lugares" value="Ilha da queimada grande - em São Paulo ">Ilha da queimada
+                    grande -
+                    São Paulo
+                </label>
+                <label>
+                    <input type="radio" name="lugares" value=" Ilha das Cobras - rj">Ilha das Cobras
+                    - rj
+                </label>
+                <label>
+                    <input type="radio" name="lugares" value=" Ilha da Sentinela do Norte - Índia">Ilha da Sentinela do
+                    Norte -
+                    Índia
+                </label>
+                <label>
+                    <input type="radio" name="lugares" value=" Caverna dos Cristais - México">Caverna dos Cristais -
+                    México
+                </label>
+                <label>
+                    <input type="radio" name="lugares" value="  Porta do Inferno - Turcomenistão">
+                    Porta do Inferno - Turcomenistão
+                </label>
+                <label>
+                    <input type="radio" name="lugares" value=" Vale da Morte - Califórnia"> Vale da
+                    Morte - Califórnia
+                </label>
+                <label>
+                    <input type="radio" name="lugares" value=" Lago Fervente - Ilha de Dominica">
+                    Lago Fervente - Ilha de Dominica
+                </label>
+                <label>
+                    <input type="radio" name="lugares" value="Depressão de Afar - África">Depressão
+                    de Afar - África
+                </label>
+                <label>
+                    <input type="radio" name="lugares" value=" Lago Nyos - Camarões"> Lago Nyos -
+                    Camarões
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="Mes"><strong>Mes de Viagem</strong></label>
+                <input id="date" type="date">
+
+            </div>
+
+            <fieldset class="grupo">
+
+                <div id="check">
+                    <label><strong>Selecione a Forma de Pagamento:</strong></label><br>
+                    <select id="Mes" required>
+
+                        <option selected disabled value="">Selecione</option>
+                        <option>A VISTA</option>
+                        <option>12X/SEM JUROS</option>
+                        <option>24X/SEM JUROS </option><br>
+
+                    </select>
+                    <br>
+
+                    <br> <input type="checkbox" id="banco1" name="banco1" value="HTML">
+                    <label for="banco1"> SANTANDER</label>
+                    <input type="checkbox" id="banco2" name="banco2" value="CSS">
+                    <label for="banco2"> C6</label>
+                    <input type="checkbox" id="banco3" name="banco3" value="JavaScript">
+                    <label for="banco3"> NUBANK</label>
+                    <input type="checkbox" id="banco4" name="banco4" value="PHP">
+                    <label for="banco4"> BRADESCO</label><br>
+                    <input type="checkbox" id="banco5" name="banco5" value="C#">
+                    <label for="banco5"> CAIXA ECONOMICA</label>
+                    <input type="checkbox" id="banco6" name="banco6" value="Python">
+                    <label for="banco6"> BANCO DO BRASIL</label>
+                    <input type="checkbox" id="banco7" name="banco7" value="Java">
+                    <label for="banco7"> ITAU</label>
+
+
+                </div>
+            </fieldset>
+
+            <!-- 
+                                    <button class="form" type="submit">Enviar</button>-->
+            <div class="campo">
+                <br>
+                <br><label for="experiencia"><strong>Conte sua experiência no preenchimento do
+                        formulario:<br>
+                    </strong></label>
+
+                <textarea rows="7" style="width: 27em" id="experiencia" name="experiencia"></textarea><br>
+
+                <input class="formbutton" type="submit" onclick="logar(); return true">
+
+
+
+
+                <script>
+
+
+                    function logar() {
+
+                        var nome = document.getElementById('nome').value;
+                        var sobrenome = document.getElementById('sobrenome').value;
+
+                        if (nome) {
+                            alert('👍 PARABENS CADASTRO CONLUIDO');
+
+                        } else {
+                            alert('⚠️PREENCHA SEUS DADOS');
+                        }
+
+                    }
+
+                </script>
+        </form>
+
+</body>
+
+</html>
